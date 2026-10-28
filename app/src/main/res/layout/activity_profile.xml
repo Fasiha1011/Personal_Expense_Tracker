@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF9F5"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Profile"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#405B4A"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your personal space"
+            android:textSize="15sp"
+            android:textColor="#8B8A91"
+            android:gravity="center"
+            android:layout_marginBottom="28dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:background="#F0F4E9"
+            android:padding="24dp"
+            android:elevation="3dp">
+
+            <ImageView
+                android:id="@+id/profileImage"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@android:drawable/ic_menu_myplaces"
+                android:scaleType="centerCrop"
+                android:background="#DCE8D2"
+                android:padding="12dp"
+                android:contentDescription="Profile picture" />
+
+            <Button
+                android:id="@+id/changePhotoButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose Profile Photo"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#789477"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="20dp" />
+
+            <Button
+                android:id="@+id/removePhotoButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remove Photo"
+                android:textAllCaps="false"
+                android:textColor="#855B67"
+                android:backgroundTint="#F5E3E8"
+                android:layout_marginBottom="20dp" />
+
+
+            <TextView
+                android:id="@+id/profileName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Full Name"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:textColor="#405B4A"
+                android:gravity="center"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/profileEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email Address"
+                android:textSize="15sp"
+                android:textColor="#777780"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Account Settings"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:textColor="#405B4A"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:text="Back to Dashboard"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#789477"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/profileLogoutButton"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:text="Logout"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textColor="#855B67"
+            android:backgroundTint="#F5E3E8" />
+
+    </LinearLayout>
+
+</ScrollView>
